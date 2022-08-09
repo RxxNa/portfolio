@@ -1,0 +1,67 @@
+/* color */
+$Black: #202020;
+$hover : #5c5c5c;
+
+/* base style */
+body {
+  font-family: 'Shippori Mincho', serif;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  margin: 0 143px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: $Black;
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    li {
+      margin-right: 21px;
+      font-size: 20px;
+
+      a {
+        transition: all .3s;
+
+        &:hover {
+          color: $hover;
+        }
+      }
+
+      i {
+        font-size: 26px;
+
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+/* hero */
+.hero-bg {
+  height: 708px;
+  background-image: linear-gradient(#FFFBA3, #fff);
+}
